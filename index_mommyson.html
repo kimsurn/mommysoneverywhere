@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://use.typekit.net/dcf1ame.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <title>#mommysoneverywhere</title>
+    <style type="text/css"> 
+
+    *h1{font-family: "source-han-serif-korean",serif;}
+    h1{text-align:center; font-size: 10em;  line-height:1.7; font-weight: 900;}
+
+    body{width: 100%; height: 100%; background:black; animation: mycolor_ 6s infinite alternate;}
+    
+
+    #body1 {width: 100%; height:80px; position: absolute; left: 0px; top: 100px; animation: mycolor 6s infinite alternate;}
+    @keyframes mycolor {
+            from {background-color: blue;}
+            to {background-color: red;}
+            }
+
+    #body2 {width: 100%; height:80px; animation: mycolor2 6s infinite alternate; position: absolute; left: 0px; top: 190px;}
+    @keyframes mycolor2 {
+            from {background-color: red;}
+            to {background-color: yellow;}
+            }
+
+    #body3 {width: 100%; height:80px; animation: mycolor3 6s infinite alternate; position: absolute; left: 0px; top: 280px;}
+    @keyframes mycolor3 {
+            from {background-color: yellow;}
+            to {background-color: blue;}
+            }
+
+    #body4 {width: 100%; height:20px; position: absolute; left: 0px; top: 1800px; animation: mycolor 6s infinite alternate;}
+    @keyframes mycolor4 {
+            from {background-color: blue;}
+            to {background-color: red;}
+            }
+
+    #body5 {width: 100%; height:20px; animation: mycolor2 6s infinite alternate; position: absolute; left: 0px; top: 1820px;}
+    @keyframes mycolor5 {
+            from {background-color: red;}
+            to {background-color: yellow;}
+            }
+
+    #body6 {width: 100%; height:20px; animation: mycolor3 6s infinite alternate; position: absolute; left: 0px; top: 1840px;}
+    @keyframes mycolor6 {
+            from {background-color: yellow;}
+            to {background-color: blue;}
+            }
+        /*#myDiv {
+            box-sizing: border-box;
+            width: 400px;
+            height: 100px;
+            background: blue;
+            margin: auto;
+            position: relative; top: 150px;
+            text-align: center;
+            padding-top: 50px;
+            animation:mymove 3s linear alternate infinite;
+            transition: all 1s;
+            color: black;
+            }*/
+
+        #blank{width: 550px; height: 545px; position: absolute; left: 720px; top: 87px;}
+        #blank img { position: absolute; width: 550px; height: 545px;}
+
+        #where {width:1200px; height: 300px; margin: auto; position: relative;  text-align: center;  border-radius: 30px; margin-top: -20px;
+            /*animation: mymove 2.5s  infinite; 
+            animation-play-state: running;
+            animation-timing-function: cubic-bezier(.27,1.01,.46,.84); margin-bottom: -100px;*/}
+        #where img{width:900px; height: 250px; text-align: center; margin-top: 15px;}
+
+        #videobox{width: 0px; position: absolute; left: 200px; top: 500px; transition: all 1s;}
+        video{width: 0px; transition: all 1s;}
+
+        #vsource {transition: all 1s; width: 0px; position: relative;}
+
+        #back{margin:0 auto; width: 100%; height: 100%;}
+
+        #msdiv {margin: auto; background: white; width: 1100px; border-radius: 25px; transition:all 1s position:relative; margin-top: 50px; margin-left: 230px; text-align: center;}
+
+        #msdiv1 {width: 250px; margin-left: 10px; float: left;}
+        #msdiv2 {width: 300px; margin-left: 20px; float: left;}
+        #msdiv3 {width: 420px; margin-left: 20px; float: left;}
+
+        #ms1 {margin: auto; width:250px; border-radius: 15px;  opacity: 1; float: left; transition: all 0.5s }
+        #ms2 {margin: auto; width:300px; border-radius: 15px; opacity: 1; float: left;transition: all 0.5s}
+        #ms3 {margin: auto; width:420px; border-radius: 15px; opacity: 1; float: left; transition: all 0.5s}
+        #ms4 {margin: auto; width:300px; border-radius: 15px; opacity: 1; float: left; margin-top: 20px; transition: all 0.5s }
+        #ms5 {margin: auto; width:250px; border-radius: 15px; float: left; margin-top: 35px; opacity: 1; transition: all 0.5s}
+        #ms6 {margin: auto; width:250px; border-radius: 15px; float: left; margin-top: 35px; opacity: 1; transition: all 0.5s}
+        #ms7 {margin: auto; width:300px; border-radius: 15px; float: left; margin-top: 20px; opacity: 1; transition: all 0.5s}
+        #ms8 {margin: auto; width:420px; border-radius: 15px; float: left; margin-top: 20px; opacity: 1; transition: all 0.5s}
+
+        #ms1:hover {opacity: 0.6; cursor: help;}
+        #ms2:hover {opacity: 0.6; cursor: help;}
+        #ms3:hover {opacity: 0.6; cursor: help;}
+        #ms4:hover {opacity: 0.6; cursor: help;}
+        #ms5:hover {opacity: 0.6; cursor: help;}
+        #ms6:hover {opacity: 0.6; cursor: help;}
+        #ms7:hover {opacity: 0.6; cursor: help;}
+        #ms8:hover {opacity: 0.6; cursor: help;}
+
+        #even {width: 30px; position: absolute; animation: drop 25s infinite;}
+        #even img {width: 30px; position: absolute; animation: drop 25s infinite; }
+        @keyframes drop {
+            from {margin-top:-800px;}
+            to {margin-top:600px;}
+            }
+
+        #ok {width: 30px; position: absolute; animation: drop 25s infinite;}
+        #ok img {width: 30px; position: absolute; animation: drops 25s infinite; }
+        @keyframes drops {
+            from {margin-top:-1000px;}
+            to {margin-top:200px;}
+            }
+
+        #wait {width: 30px; position: absolute; animation: drop 25s infinite;}
+        #wait img {width: 30px; position: absolute; animation: drops 25s infinite; }
+        @keyframes drops {
+            from {margin-top:-1300px;}
+            to {margin-top:400px;}
+            }
+
+
+        #wbox {position: absolute; left: 480px; top: 15px; transition: all 0.5s;}
+
+        #wsource{position: absolute; transition: all 0.5s;}
+        #wsource2{position: absolute; transition: all 0.5s;}
+        #wsource3{position: absolute; transition: all 0.5s;}
+        #wsource4{position: absolute; transition: all 0.5s;}
+        #wsource5{position: absolute; transition: all 0.5s;}
+        #wsource6{position: absolute; transition: all 0.5s;}
+        #wsource7{position: absolute; transition: all 0.5s;}
+        #wsource8{position: absolute; transition: all 0.5s;}
+                /*video{width: 0px; transition: all 1s;}
+        
+        #vsource{position: absolute; left: 50%; top: 50px; transform: translateX(-50%); width: 0px; transition: all 1s;}*/
+
+         #myDiv:hover {color: white; font-weight: 900; background: black;}
+
+         @keyframes mymove {
+            from {}
+            to {transform: rotate3d(0.1,18,2,360deg);}
+            }
+        </style>
+</head>
+
+<body>
+    <div id="body1"></div>
+    <div id="body2"></div>
+    <div id="body3"></div>
+    <div id="body4"></div>
+    <div id="body5"></div>
+    <div id="body6"></div>
+    <div id="videobox">
+    <video id="vsource" src = "./img/mv_1.mp4" type="video/mp4">
+    </video>
+    </div>
+
+
+    <div id="back">
+
+        <div id="where" style="margin-top: 80px; margin-left: 160px;"><img src="./img/where.png"></div>
+
+    <div id="msdiv">
+        <div id="msdiv1">
+            <img src="./img/ms1.png" id="ms1">
+            <img src="./img/ms5.png" id="ms5">
+            <img src="./img/ms6.png" id="ms6">
+            <img src="./img/jump.png" id="ms6">
+        </div>
+        <div id="msdiv2">
+            <img src="./img/ms2.png" id="ms2">
+            <img src="./img/ms4.png" id="ms4">
+            <img src="./img/ms7.png" id="ms7">
+            <img src="./img/jump.png" id="ms7">
+        </div>
+        <div id="msdiv3">
+            <img src="./img/ms3.png" id="ms3">
+            <img src="./img/ms8.png" id="ms8">
+            <img src="./img/dada.png" id="ms8">
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        var toggle = "off"
+        
+        where.onclick = function(){
+                if(toggle == "off"){
+                    videobox.style.width = "500px;"
+
+                    vsource.style.width = "500px;"
+                    vsource.setAttribute("src", "mv_1.mp4");
+
+                    vsource.play();
+                    toggle = "on";
+                }
+            else {
+                    videobox.style.width = "0px;"
+
+                    vsource.style.width = "0px;"
+                    vsource.setAttribute("src", "mv_1.mp4");
+
+                    vsource.pause();
+                    toggle = "off";
+                }
+                }
+
+    </script>
+    
+
+    <script>
+
+        /*food.onclick = function(){
+            gifbox.style.width = "820px";
+            gifbox.style.height = "550px";
+            gbox.style.background = "black";
+
+            gsource.style.width = "720px";
+            gsource.setAttribute("src","dheese.mp4");
+            gsource.play();
+        }
+
+        food2.onclick = function(){
+            gifbox.style.width = "820px";
+            gifbox.style.height = "550px";
+
+            gsource.style.width = "720px";
+            gsource.setAttribute("src","laugh.mp4");
+            gsource.play();
+        }*/
+
+
+
+
+        var toggle = "off";
+
+        ms1.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource.style.width = "730px";
+                wsource.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource.style.width = "0px";
+                wsource.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms2.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource2.style.width = "730px";
+                wsource2.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource2.style.width = "0px";
+                wsource2.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms3.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource3.style.width = "730px";
+                wsource3.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+
+                toggle ="off";
+                wsource3.style.width = "0px";
+                wsource3.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms4.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource4.style.width = "730px";
+                wsource4.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource4.style.width = "0px";
+                wsource4.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms5.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource5.style.width = "730px";
+                wsource5.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource5.style.width = "0px";
+                wsource5.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms6.onclick = function(){
+            if(toggle == "off"){
+                wsource6.style.width = "730px";
+                wsource6.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource6.style.width = "0px";
+                wsource6.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms7.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource7.style.width = "730px";
+                wsource7.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource7.style.width = "0px";
+                wsource7.style.height = "0px";
+            } 
+        }
+
+        var toggle = "off";
+
+        ms8.onclick = function(){
+            if(toggle == "off"){
+                
+                wsource8.style.width = "730px";
+                wsource8.style.height = "330px";
+
+                toggle = "on";
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                wsource8.style.width = "0px";
+                wsource8.style.height = "0px";
+            } 
+        }
+    </script>
+    
+    <div id="even" style="opacity: 0.7;"><img src="./img/even.png"></div>
+
+    <script type="text/javascript">
+        var total = 0;
+
+        for(var i=0; i<10; i++){/*가운데의 숫자만 건드림*/
+
+            var even = document.getElementById("even");
+            var neweven = even.cloneNode(true);
+            /*newttt.style.marginLeft = i*20 + "px";*/
+            neweven.style.left = Math.random()*window.innerWidth+"px";
+            neweven.style.top = Math.random()*window.innerHeight+"px";
+            neweven.style.animationDuration = "10"+"s";
+            /*newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";*/
+            neweven.style.background = randomColor();
+            document.body.appendChild(neweven);
+
+        }
+
+        function randomColor(){
+            var a = Math.random()*255;
+            var b = Math.random()*0;
+            var c = Math.random()*150;
+            var text = "rgb("+a+","+b+","+c+")";
+            return text;
+        }
+        </script>
+
+        <div id="ok"><img src="./img/ok.png"></div>
+
+        <script type="text/javascript">
+        var total = 0;
+
+        for(var i=0; i<12; i++){/*가운데의 숫자만 건드림*/
+
+            var ok = document.getElementById("ok");
+            var newok = ok.cloneNode(true);
+            /*newttt.style.marginLeft = i*20 + "px";*/
+            newok.style.left = Math.random()*window.innerWidth+"px";
+            newok.style.top = Math.random()*window.innerHeight+"px";
+            newok.style.animationDuration = "10"+"s";
+            /*newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";*/
+            newok.style.background = randomColor();
+            document.body.appendChild(newok);
+
+        }
+        function randomColor(){
+            var a = Math.random()*255;
+            var b = Math.random()*0;
+            var c = Math.random()*150;
+            var text = "rgb("+a+","+b+","+c+")";
+            return text;
+        }
+
+        </script>
+
+        <div id="wait"><img src="./img/wait.png"></div>
+
+        <script type="text/javascript">
+        var total = 0;
+
+        for(var i=0; i<10; i++){/*가운데의 숫자만 건드림*/
+
+            var wait = document.getElementById("wait");
+            var newwait = wait.cloneNode(true);
+            /*newttt.style.marginLeft = i*20 + "px";*/
+            newwait.style.left = Math.random()*window.innerWidth+"px";
+            newwait.style.top = Math.random()*window.innerHeight+"px";
+            newwait.style.animationDuration = "10"+"s";
+            /*newttt.style.background = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";*/
+            newwait.style.background = randomColor();
+            document.body.appendChild(newwait);
+
+        }
+        function randomColor(){
+            var a = Math.random()*255;
+            var b = Math.random()*0;
+            var c = Math.random()*150;
+            var text = "rgb("+a+","+b+","+c+")";
+            return text;
+        }
+
+
+        /*location.reload();페이지 자동 리프레쉬
+        var v = setInterval(function(){console.log("reloaded"); location.reloaded(); },3000);*/
+    </script>
+
+    <div id="wbox" style="width: 0px; margin-top: 500px; margin-left: -100px;">
+        <img src="./img/window.png" id="wsource" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 250px; margin-left: 100px;">
+        <img src="./img/window2.png" id="wsource2" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 400px; margin-left: 300px;">
+        <img src="./img/window3.png" id="wsource3" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top:600px; margin-left: -300px;">
+        <img src="./img/window4.png" id="wsource4" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 650px; margin-left: -450px;">
+        <img src="./img/window5.png" id="wsource5" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 700px; margin-left: -500px;">
+        <img src="./img/window6.png" id="wsource6" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 800px; margin-left: -300px;">
+        <img src="./img/window2.png" id="wsource7" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+
+    <div id="wbox" style="width: 0px; margin-top: 900px; margin-left: 100px;">
+        <img src="./img/window4.png" id="wsource8" style="width: 0px; height: 0px; transition: all 0s">
+    </div>
+    
+
+    <div id="pig" style="margin-top: 80px;"><img src="./img/byeong.png"></div>
+    <div style="width: 600px; height: 50px; float: right;"> </div>
+
+    
+
+    
+    
+</div>
+</div>
+
+</body>
+</html>
